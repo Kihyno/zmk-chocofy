@@ -13,6 +13,7 @@
                 compatible = "zmk,keymap";
 
                 default_layer {
+					display-name = "Base";
 // -----------------------------------------------------------------------------------------
 // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
 // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -26,13 +27,14 @@
                         >;
                 };
                 num {
+					display-name = "Num";
 // -----------------------------------------------------------------------------------------
 // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
 // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
 // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-&none &kp N1     &kp N2     &kp N3          &kp N4         &kp N5          &to 1      &none     &none     &none      &to 0     &none
+&none &kp N1     &kp N2     &kp N3          &kp N4         &kp N5          &tog 1     &none     &none     &none      &to 0     &none
 &none &kp N6     &kp N7     &kp N8          &kp N9         &kp N0          &kp LEFT   &kp DOWN  &kp UP    &kp RIGHT  &kp DQT   &none
 &none &kp GRAVE  &kp EQUAL  &mt LCTL MINUS  &mt LALT LBKT  &mt LSHFT RBKT  &kp RSHFT  &kp RCTL  &kp RALT  &none      &kp BSLH  &none
                  &trans  &trans  &trans      &trans  &trans   &trans
